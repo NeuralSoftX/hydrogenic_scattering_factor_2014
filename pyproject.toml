@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hydrogenic-scattering-factor-2014"
+version = "1.0.0"
+description = "Published hydrogenic scattering factors, densities and potentials for neutral atoms"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Ivan Lobato / NeuralSoftX", email = "ivan.lobato@neuralsoftx.com" },
+]
+dependencies = [
+    "h5py==3.15.1",
+    "numpy==2.3.5",
+    "scipy==1.16.3",
+]
+
+[project.urls]
+Repository = "https://github.com/NeuralSoftX/hydrogenic_scattering_factor_2014"
+
+[tool.setuptools.packages.find]
+include = ["hydrogenic_scattering_factor_2014*"]
+
+[tool.setuptools.package-data]
+hydrogenic_scattering_factor_2014 = [
+    "data/*.h5",
+    "data/coefficients_txt/*.txt",
+    "reference/*.h5",
+]

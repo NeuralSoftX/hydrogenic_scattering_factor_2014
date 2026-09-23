@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use these scattering-factor tables or the code, please cite the paper."
+title: "Hydrogenic scattering factors, densities and potentials for neutral atoms"
+type: dataset
+authors:
+  - family-names: "Lobato"
+    given-names: "Ivan"
+    affiliation: "NeuralSoftX"
+  - family-names: "Van Dyck"
+    given-names: "D."
+repository-code: "https://github.com/NeuralSoftX/hydrogenic_scattering_factor_2014"
+license: "Apache-2.0"
+preferred-citation:
+  type: article
+  title: "An accurate parameterization for scattering factors, electron densities and electrostatic potentials for neutral atoms that obey all physical constraints"
+  authors:
+    - family-names: "Lobato"
+      given-names: "Ivan"
+    - family-names: "Van Dyck"
+      given-names: "D."
+  year: 2014
+  journal: "Acta Crystallographica Section A"
+  volume: 70
+  start: 636
+  end: 649
+  doi: "10.1107/S205327331401643X"
+references:
+  - type: book
+    title: "Advanced Computing in Electron Microscopy"
+    authors:
+      - family-names: "Kirkland"
+        given-names: "Earl J."
+    year: 1998
+    edition: 1
+    publisher:
+      name: "Springer"
+    notes: "Source of the tabulated electron and X-ray scattering factors used as the fitting targets of the published parameterisation."
+  - type: book
+    title: "Advanced Computing in Electron Microscopy"
+    authors:
+      - family-names: "Kirkland"
+        given-names: "Earl J."
+    year: 2010
+    edition: 2
+    publisher:
+      name: "Springer"
+    notes: "Recalculated tabulation. The second released coefficient group is the same five-term parameterisation refitted against these data; it is not separately published work."
